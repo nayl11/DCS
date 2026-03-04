@@ -1,0 +1,86 @@
+/* Style général */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 20px;
+}
+
+h3 {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+
+/* Style de la barre d'onglets */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  border-radius: 5px 5px 0 0;
+}
+
+/* Style des boutons d'onglets */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 20px;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Changement de couleur au survol */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Style pour l'onglet actif */
+.tab button.active {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Contenu des onglets */
+.tabcontent {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: white;
+  animation: fadeEffect 0.5s; /* Petit effet de transition */
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Style des tableaux (très important pour le rendu) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
